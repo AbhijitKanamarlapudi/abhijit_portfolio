@@ -21,6 +21,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -172,10 +173,7 @@
             data-responsibilities="Analyzed existing on-premises data warehouse objects and mapped source-to-target migration requirements.|Designed ADF pipelines, linked services, datasets, triggers, and orchestration flows for scheduled and event-based loads.|Built Azure SQL Database objects, validation logic, and transformation procedures for cloud-based warehouse processing.|Configured Azure Blob Storage, Logic Apps, and Key Vault integrations for secure file movement, notifications, and secret management.|Implemented health checks, monitoring logic, row-level security, and deployment support for production readiness.">
             <div class="project-topline animated-line"></div>
             <h3>Migration of On-Premises DW to Azure SQL DB</h3>
-            <p>
-              Migrated an on-premises data warehouse to Azure using Azure Data Factory, Azure Blob Storage,
-              Azure SQL DB, Logic Apps, and Key Vault.
-            </p>
+            <p>Migrated an on-premises data warehouse to Azure using Azure Data Factory, Azure Blob Storage, Azure SQL DB, Logic Apps, and Key Vault.</p>
             <div class="project-tech">
               <span>ADF</span><span>Azure SQL DB</span><span>Blob Storage</span><span>Logic Apps</span><span>Key Vault</span>
             </div>
@@ -189,10 +187,7 @@
             data-responsibilities="Assessed tenant-level dependencies across Azure SQL DB, Data Factory, Logic Apps, Storage Accounts, SharePoint, and reporting components.|Planned migration sequencing, environment readiness, configuration mapping, and object validation across source and target tenants.|Used Databricks, Spark, and Delta Lake to support scalable data movement, transformation, and intermediate validation processes.|Coordinated migration of Power BI gateways, automation artifacts, and integration services while preserving operational continuity.|Performed testing, reconciliation, post-migration validation, and production handover to ensure stable cutover.">
             <div class="project-topline animated-line"></div>
             <h3>Migration of Azure DW Between Tenants</h3>
-            <p>
-              Migrated Azure services across tenants including Azure SQL Database, Data Factory, Logic Apps,
-              Storage Accounts, SharePoint, Runbooks, and Power BI Gateways.
-            </p>
+            <p>Migrated Azure services across tenants including Azure SQL Database, Data Factory, Logic Apps, Storage Accounts, SharePoint, Runbooks, and Power BI Gateways.</p>
             <div class="project-tech">
               <span>Databricks</span><span>Spark</span><span>Delta Lake</span><span>Azure</span>
             </div>
@@ -206,10 +201,7 @@
             data-responsibilities="Worked with business users to gather reporting requirements and translate them into dashboards, subscriptions, and warehouse logic.|Developed Power BI reports, DAX measures, and visual layouts to support operational and analytical reporting needs.|Created and maintained SSRS reports, report subscriptions, and automated distribution processes for recurring business reports.|Enhanced SSIS packages and SQL procedures to improve data availability, transformation quality, and refresh reliability.|Validated report outputs, supported issue resolution, and optimized performance for both data pipelines and report rendering.">
             <div class="project-topline animated-line"></div>
             <h3>On-Prem DW, Power BI, and SSRS Modernization</h3>
-            <p>
-              Developed Power BI dashboards, DAX measures, SSRS subscriptions, and ETL workflows while improving
-              data accuracy, system performance, and reporting reliability.
-            </p>
+            <p>Developed Power BI dashboards, DAX measures, SSRS subscriptions, and ETL workflows while improving data accuracy, system performance, and reporting reliability.</p>
             <div class="project-tech">
               <span>Power BI</span><span>SSRS</span><span>DAX</span><span>SSIS</span>
             </div>
@@ -223,10 +215,7 @@
             data-responsibilities="Designed and maintained warehouse tables, views, functions, and stored procedures aligned with reporting and business rules.|Analyzed slow-running queries and improved T-SQL performance using indexing strategies, execution plan review, and query rewrites.|Managed SQL Agent jobs, package scheduling, and operational support for regular data movement and refresh activities.|Supported source-to-target mappings, change requests, and production fixes for existing warehouse components.|Executed testing, deployment support, and ongoing tuning to keep warehouse jobs stable and performant.">
             <div class="project-topline animated-line"></div>
             <h3>Data Warehouse Management and SQL Performance Tuning</h3>
-            <p>
-              Designed and maintained data warehouse objects, created procedures, functions, and views,
-              optimized T-SQL performance with clustered and non-clustered indexes.
-            </p>
+            <p>Designed and maintained data warehouse objects, created procedures, functions, and views, optimized T-SQL performance with clustered and non-clustered indexes.</p>
             <div class="project-tech">
               <span>SQL Server</span><span>Index Tuning</span><span>SQL Agent</span><span>SSMS</span>
             </div>
@@ -237,33 +226,85 @@
 
     <section id="certifications" class="section reveal">
       <div class="container">
-        <div class="section-heading">
-          <p class="section-tag">Credentials</p>
-          <h2>Certifications & Education</h2>
+        <div class="section-heading cert-section-head">
+          <div>
+            <p class="section-tag">Credentials</p>
+            <h2>Certificates</h2>
+            <p class="section-note">Auto slideshow of certifications. It loops continuously from right to left. You can also use the arrows or click any certificate for a larger preview.</p>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="certPrev" aria-label="Previous certificate">‹</button>
+            <button class="carousel-btn" id="certNext" aria-label="Next certificate">›</button>
+          </div>
         </div>
 
-        <div class="projects-grid stagger-container">
-          <article class="project-card glass-card stagger-item">
-            <div class="project-topline animated-line"></div>
-            <h3>Certifications</h3>
-            <div class="list-block">
-              <p>AZ-900 • Azure Fundamentals</p>
-              <p>DP-900 • Azure Data Fundamentals</p>
-              <p>AI-900 • Azure AI Fundamentals</p>
-              <p>PL-900 • Power Platform Fundamentals</p>
-              <p>HackerRank • SQL Certified</p>
-            </div>
-          </article>
+        <div class="cert-carousel-shell glass-card">
+          <div class="cert-carousel-track" id="certCarouselTrack">
+            <article class="cert-card glass-inner open-cert" tabindex="0"
+              data-src="certificates/AZ-900_Azure_Fundamentals.jpeg"
+              data-title="AZ-900 • Azure Fundamentals"
+              data-issuer="Microsoft"
+              data-date="January 11, 2021"
+              data-details="Microsoft Certified: Azure Fundamentals">
+              <img src="certificates/AZ-900_Azure_Fundamentals.jpeg" alt="AZ-900 Azure Fundamentals certificate" />
+              <div class="cert-card-info"><h3>AZ-900 • Azure Fundamentals</h3><p>Microsoft</p><span>2021</span></div>
+            </article>
 
-          <article class="project-card glass-card stagger-item">
-            <div class="project-topline animated-line"></div>
-            <h3>Education</h3>
-            <div class="list-block">
-              <p><strong>B.Tech</strong> • Electronics and Instrumentation Engineering</p>
-              <p>VR Siddhartha Engineering College, Vijayawada</p>
-              <p>2014 – 2018 • 9.28 CGPA</p>
-            </div>
-          </article>
+            <article class="cert-card glass-inner open-cert" tabindex="0"
+              data-src="certificates/DP-900_Azure_Data_Fundamentals.jpeg"
+              data-title="DP-900 • Azure Data Fundamentals"
+              data-issuer="Microsoft"
+              data-date="July 21, 2021"
+              data-details="Microsoft Certified: Azure Data Fundamentals">
+              <img src="certificates/DP-900_Azure_Data_Fundamentals.jpeg" alt="DP-900 Azure Data Fundamentals certificate" />
+              <div class="cert-card-info"><h3>DP-900 • Azure Data Fundamentals</h3><p>Microsoft</p><span>2021</span></div>
+            </article>
+
+            <article class="cert-card glass-inner open-cert" tabindex="0"
+              data-src="certificates/AI-900_Azure_AI_Fundamentals.png"
+              data-title="AI-900 • Azure AI Fundamentals"
+              data-issuer="Microsoft"
+              data-date="August 2, 2021"
+              data-details="Microsoft Certified: Azure AI Fundamentals">
+              <img src="certificates/AI-900_Azure_AI_Fundamentals.png" alt="AI-900 Azure AI Fundamentals certificate" />
+              <div class="cert-card-info"><h3>AI-900 • Azure AI Fundamentals</h3><p>Microsoft</p><span>2021</span></div>
+            </article>
+
+            <article class="cert-card glass-inner open-cert" tabindex="0"
+              data-src="certificates/PL-900_Power_Platform_Fundamentals.png"
+              data-title="PL-900 • Power Platform Fundamentals"
+              data-issuer="Microsoft"
+              data-date="October 25, 2021"
+              data-details="Microsoft Certified: Power Platform Fundamentals">
+              <img src="certificates/PL-900_Power_Platform_Fundamentals.png" alt="PL-900 Power Platform Fundamentals certificate" />
+              <div class="cert-card-info"><h3>PL-900 • Power Platform Fundamentals</h3><p>Microsoft</p><span>2021</span></div>
+            </article>
+
+            <article class="cert-card glass-inner open-cert" tabindex="0"
+              data-src="certificates/HackerRank_SQL_Certified.jpeg"
+              data-title="HackerRank • SQL Certified"
+              data-issuer="HackerRank"
+              data-date="August 12, 2021"
+              data-details="SQL (Intermediate)">
+              <img src="certificates/HackerRank_SQL_Certified.jpeg" alt="HackerRank SQL Certified certificate" />
+              <div class="cert-card-info"><h3>HackerRank • SQL Certified</h3><p>HackerRank</p><span>2021</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section reveal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Academics</p>
+          <h2>Educational Details</h2>
+        </div>
+        <div class="glass-card content-card education-card">
+          <h3>B.Tech — Electronics and Instrumentation Engineering</h3>
+          <p><strong>College:</strong> VR Siddhartha Engineering College, Vijayawada</p>
+          <p><strong>Duration:</strong> 2014 – 2018</p>
+          <p><strong>CGPA:</strong> 9.28</p>
         </div>
       </div>
     </section>
@@ -296,7 +337,6 @@
       <p class="section-tag">Project Details</p>
       <h2 id="modalTitle">Project Title</h2>
       <p class="modal-overview" id="modalOverview"></p>
-
       <div class="modal-meta">
         <div class="meta-block glass-inner">
           <h4>Tech Stack</h4>
@@ -307,11 +347,24 @@
           <p id="modalImpact"></p>
         </div>
       </div>
-
       <div class="modal-timeline-wrap">
         <h3>Responsibilities Timeline</h3>
         <div class="modal-timeline" id="modalTimeline"></div>
       </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="certModal">
+    <div class="modal-card glass-card spring-modal cert-modal-card" role="dialog" aria-modal="true" aria-labelledby="certTitle">
+      <button class="modal-close" id="closeCertModal" aria-label="Close certificate popup">×</button>
+      <p class="section-tag">Certificate Preview</p>
+      <h2 id="certTitle">Certificate Title</h2>
+      <div class="cert-modal-meta">
+        <span id="certIssuer"></span>
+        <span id="certDate"></span>
+      </div>
+      <p class="modal-overview" id="certDetails"></p>
+      <div class="cert-preview" id="certPreview"></div>
     </div>
   </div>
 
